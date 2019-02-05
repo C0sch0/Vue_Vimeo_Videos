@@ -24,3 +24,5 @@ npm install sass-loader --save-dev
 ```
 npm install --save-dev node-sass
 ```
+
+Speed of collapsable is set in  v-show-slide:SPEED:ease-in="featuresOpen" in the component
