@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-wrap">
       <div class="card-header">
-        <h2 class="card-title">¿Es seguro?</h2><!-- /.card-title -->
+        <h2 class="card-title"></h2><!-- /.card-title -->
       </div><!-- /.card-header -->
       <div class="card-content">
         <ul
@@ -11,7 +11,7 @@
 
           <p>FINTUAL es una Administradora General de Fondos regulada por la Comisión para el Mercado Financiero (ex SVS) a quien reportamos todos los días el patrimonio de los fondos y nuestros estados financieros trimestralmente.</p>
           <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe id="video2" src="https://player.vimeo.com/video/312786255?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe :id="video" :src="id" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </ul><!-- /.features -->
         <button
@@ -25,6 +25,11 @@
 <script>
 export default {
   name: 'Video_Collapsable',
+  props: {
+    id: {required:true},
+    video: {required: true},
+  }
+  ,
   data () {
     return {
       featuresOpen: false
@@ -33,7 +38,7 @@ export default {
   methods: {
     toggleFeatures () {
       this.featuresOpen = !this.featuresOpen;
-      const iframe = document.querySelector('iframe#video2');
+      const iframe = document.getElementById(this.$options.propsData.video);
       if (this.featuresOpen) {
         iframe.contentWindow.postMessage(JSON.stringify({ method: 'play' }), '*');}
       else {
