@@ -1,20 +1,17 @@
 <template>
   <div id="row">
     <img alt="Vue logo" src="./assets/logo.png">
-    <card-default />
-    <card-with-args />
+    <Video_Collapsable />
   </div>
 </template>
 
 <script>
-import CardDefault from './components/CardDefault.vue'
-import CardWithArgs from './components/CardWithArgs.vue'
+import Video_Collapsable from './components/Video_Collapsable.vue'
 
 export default {
   name: 'app',
   components: {
-    CardDefault,
-    CardWithArgs
+    Video_Collapsable
   }
 }
 </script>
