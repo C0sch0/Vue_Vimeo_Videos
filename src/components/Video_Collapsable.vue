@@ -10,7 +10,7 @@
 
           <p>FINTUAL es una Administradora General de Fondos regulada por la Comisión para el Mercado Financiero (ex SVS) a quien reportamos todos los días el patrimonio de los fondos y nuestros estados financieros trimestralmente.</p>
           <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe ref="video" :id="video" :src="id" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe ref="video" :src="id" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </ul><!-- /.features -->
         <button
@@ -26,7 +26,6 @@ export default {
   name: 'Video_Collapsable',
   props: {
     id: {required:true},
-    video: {required: true},
   }
   ,
   data () {

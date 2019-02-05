@@ -6,43 +6,37 @@
     <h2 class="card-title">¿Qué es un robot advisor ?</h2>
       <Video_Collapsable
               id='https://player.vimeo.com/video/314101620?title=0&byline=0&portrait=0'
-              video="2"
       ></Video_Collapsable>
     </div>
 
-    <div id="video2">
+    <div>
     <h2 class="card-title">¿Se puede invertir más de una vez?</h2>
       <Video_Collapsable
               id='https://player.vimeo.com/video/312786602?title=0&byline=0&portrait=0'
-              video="3"
       ></Video_Collapsable>
     </div>
 
-    <div id="video3">
+    <div>
     <h2 class="card-title">¿Qué es y por qué me conviene el APV?</h2>
       <Video_Collapsable id='https://player.vimeo.com/video/312786579?title=0&byline=0&portrait=0'
-                         video="4"
       ></Video_Collapsable>
     </div>
 
-    <div id="video4">
+    <div>
     <h2 class="card-title">¿Es seguro Fintual?</h2>
       <Video_Collapsable id='https://player.vimeo.com/video/312786255?title=0&byline=0&portrait=0'
-                         video="5"
       ></Video_Collapsable>
     </div>
 
-    <div id="video5">
+    <div>
     <h2 class="card-title">¿Qué pasa si me muero?</h2>
       <Video_Collapsable id='https://player.vimeo.com/video/312786112?title=0&byline=0&portrait=0'
-                         video="6"
       ></Video_Collapsable>
     </div>
 
-    <div id="video6">
+    <div>
     <h2 class="card-title">¿Qué es Fintual?</h2>
     <Video_Collapsable id='https://player.vimeo.com/video/312785998?title=0&byline=0&portrait=0'
-                       video="7"
     ></Video_Collapsable>
     </div>
 
