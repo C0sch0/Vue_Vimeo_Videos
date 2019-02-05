@@ -2,7 +2,7 @@
   <div id="row">
     <img alt="Vue logo" src="./assets/logo.png">
 
-    <div id="video1">
+    <div>
     <h2 class="card-title">¿Qué es un robot advisor ?</h2>
       <Video_Collapsable
               id='https://player.vimeo.com/video/314101620?title=0&byline=0&portrait=0'

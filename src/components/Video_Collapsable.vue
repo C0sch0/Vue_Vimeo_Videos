@@ -5,13 +5,12 @@
         <h2 class="card-title"></h2><!-- /.card-title -->
       </div><!-- /.card-header -->
       <div class="card-content">
-        <ul
-                v-show-slide:300:ease-in="featuresOpen"
+        <ul v-show-slide:300:ease-in="featuresOpen"
                 class="features">
 
           <p>FINTUAL es una Administradora General de Fondos regulada por la Comisión para el Mercado Financiero (ex SVS) a quien reportamos todos los días el patrimonio de los fondos y nuestros estados financieros trimestralmente.</p>
           <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe :id="video" :src="id" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe ref="video" :id="video" :src="id" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </ul><!-- /.features -->
         <button
@@ -38,7 +37,7 @@ export default {
   methods: {
     toggleFeatures () {
       this.featuresOpen = !this.featuresOpen;
-      const iframe = document.getElementById(this.$options.propsData.video);
+      const iframe = this.$refs.video;
       if (this.featuresOpen) {
         iframe.contentWindow.postMessage(JSON.stringify({ method: 'play' }), '*');}
       else {
